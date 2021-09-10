@@ -3,7 +3,7 @@ const video = intro.querySelector("video");
 const text = intro.querySelector("h1");
 const section = document.querySelector("section");
 const end = section.querySelector("h1");
-const controller = new ScrollMagic.Controller();
+const controller = new ScrollMagic.Controller({ refreshInterval: 1 });
 let scene = new ScrollMagic.Scene({
   duration: 9200,
   triggerElement: intro,
